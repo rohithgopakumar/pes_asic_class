@@ -1,3 +1,11 @@
+![image](https://github.com/VardhanSuroshi/pes_asic_class/assets/132068498/33403244-c9dd-4aef-a022-da52e2eef51c)
+
+Welcome to my GitHub repository dedicated to VLSI Physical Design for ASICs using open-source tools.
+
+**Course Name** : VLSI Physical Design for ASICs  
+**Instructor** : Kunal Ghosh 
+
+
 # COURSE CONTENT
 
 
