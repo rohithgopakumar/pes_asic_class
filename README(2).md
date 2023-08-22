@@ -229,6 +229,17 @@ The access is done using Sysytem calls with the help of ABI
 
 ![lab2](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/fef9dc71-cea0-49a3-9e5c-2407c1eb73fc)
 
+# Labwork using ABI Function Calls
+## Algorithm for C Program using ASM
+- Incorporating assembly language code into a C program can be done using inline assembly or by linking separate assembly files with your C code.
+- When you call an assembly function from your C code, the C calling convention is followed, including pushing arguments onto the stack or passing them in registers as required.
+- The program executes the assembly function, following the assembly instructions you've provided.
+
+![image](https://github.com/RohithNagesh/pes_asic_class/assets/103078929/1d76b7ef-cac9-4331-9190-31af36525e0c)
+
+## Review ASM Function Calls
+- You write your C code in one file and your assembly code in a separate file.
+- In the assembly file, you declare assembly functions with appropriate signatures that match the calling conventions of your platform.
 
 
 #### Data can be stored in register by 2 methods
