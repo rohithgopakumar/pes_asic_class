@@ -266,13 +266,16 @@ To store 64 bits of data from mem to reg, we use 8*8bit stores ie., m[0],m[1]...
 
 
 
+## RTL design using Verilog with SKY130 Technology 
 
-
+# COURSE 
 
 </details>
 <details>
-<summary>DAY 3 : Introduction to Verilog RTL Design and Synthesis  </summary>
+<summary>DAY 1: Introduction to Verilog RTL Design and Synthesis </summary>
 <br>
+
+
 
 
 
