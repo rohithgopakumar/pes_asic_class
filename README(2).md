@@ -231,7 +231,13 @@ The access is done using Sysytem calls with the help of ABI
 
 # Labwork using ABI Function Calls
 ## Algorithm for C Program using ASM
-- Incorporating assembly language code into a C program can be done using inline assembly or by linking separate assembly files with your C code.
+- Incorporating assembly language code into a C program can be done using inline assembly or by linking separate assem    ers from memory
+
+To store 64 bits of data from mem to reg, we use 8*8bit stores ie., m[0],m[1]......m[7].
+
+    RISC-V uses Little Endian format to store the data ie., Least significant Byte is stored in m[0]
+
+DAY 1: Ibly files with your C code.
 - When you call an assembly function from your C code, the C calling convention is followed, including pushing arguments onto the stack or passing them in registers as required.
 - The program executes the assembly function, following the assembly instructions you've provided.
 
@@ -250,5 +256,97 @@ The access is done using Sysytem calls with the help of ABI
 To store 64 bits of data from mem to reg, we use 8*8bit stores ie., m[0],m[1]......m[7]. 
 
 - ___RISC-V uses Little Endian format to store the data ie., Least significant Byte is stored in m[0]___
+
+
+
+
+
+
+
+
+
+
+
+
+
+</details>
+<details>
+<summary>DAY 3 : Introduction to Verilog RTL Design and Synthesis  </summary>
+<br>
+
+
+
+ 
+Welcome to Day 1 of the Verilog RTL Design and Synthesis guide! On this day, we'll cover the basics of Verilog and get you started on your journey in digital design.
+
+## Table of Contents
+
+- [What is Verilog?](#what-is-verilog)
+- [Key Concepts](#key-concepts)
+
+## What is Verilog?
+
+Verilog is a hardware description language used for designing digital systems at various levels of abstraction. It allows engineers to describe the behavior and structure of digital circuits, making it an essential tool in the field of digital design.
+
+## Key Concepts
+
+- **Modules:** In Verilog, designs are organized into modules, which represent functional blocks of a circuit.
+
+- **Signals:** Signals are used to model inputs, outputs, and internal connections in a module.
+
+- **Registers:** Verilog designs often involve flip-flops and registers, which store and manipulate data.
+
+- **Combination and Sequential Logic:** Verilog supports both combinational logic (where outputs depend only on current inputs) and sequential logic (where outputs depend on current inputs and previous state).
+
+
+
+<details>
+<summary><strong>part 2: Design Flow and Simulation</strong></summary>
+
+Welcome to Day 2 of the Verilog RTL Design and Synthesis guide! Today, we'll delve into the design flow and simulation processes involved in creating robust digital designs using Verilog.
+
+## Table of Contents
+
+- [Design Flow](#design-flow)
+- [Writing RTL Code](#writing-rtl-code)
+- [Simulation](#simulation)
+
+## Design Flow
+
+1. **RTL Design:** Write the RTL code that describes the desired functionality of your circuit.
+
+2. **Functional Simulation:** Simulate your RTL code using tools like ModelSim or VCS to verify correct behavior.
+
+3. **Synthesis:** Convert RTL code into gate-level representation using synthesis tools like Synopsys Design Compiler.
+
+4. **Gate-Level Simulation:** Simulate the gate-level netlist to ensure functional equivalence with RTL simulation.
+
+5. **Optimization:** Optimize the gate-level design for area, power, and timing using tools like PrimeTime.
+
+## Writing RTL Code
+
+- Use an HDL like Verilog to describe the desired behavior of your circuit.
+- Create reusable modules for different parts of your design.
+- Utilize combinational and sequential constructs to achieve specific logic functionality.
+
+## Simulation
+
+- **Functional Simulation:** Verify that your RTL code behaves as expected using testbenches and simulators.
+- **Waveform Viewing:** Analyze signal behavior using waveform viewers during simulation.
+
+</details>
+
+<!-- Include Day 3, Day 4, and so on... -->
+
+<details>
+<summary><strong>Resources</strong></summary>
+
+Here are some resources to further your understanding of Verilog RTL design and synthesis:
+
+- Books: "Digital Design and Computer Architecture" by David Harris and Sarah Harris
+- Online Tutorials: Verilog tutorials on websites like [ASIC World](http://www.asic-world.com/), [Verilog Tutorial](https://www.verilog-tutorial.info/), and [EDA Playground](https://www.edaplayground.com/)
+
+</details>
+
 
 
