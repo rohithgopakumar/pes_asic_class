@@ -418,4 +418,69 @@ The project is organized as follows:
 
 4. Open the generated `multiple_modules_flat.v` file using a text editor or a tool like `gvim`.
 
+## Modules
+
+### async_reset
+
+The `asyncres` module showcases the implementation of an asynchronous reset in a digital design.
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/813ecbe0-a92d-4cda-b0f4-026ada1e399b)
+
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/a74a17a7-cd21-400f-ba07-850f0bd2c7d9)
+
+
+### sync_reset
+
+The `syncres` module demonstrates the implementation of a synchronous reset in a digital design.
+
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/462a6e46-12be-4d39-ac21-01c7314709d1)
+
+
+
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/89857b95-9cba-46a8-8218-d0036961972c)
+
+
+
+### async_set
+
+The `sync_set` module combines a asynchronous set with other logic for a more comprehensive example.
+
+
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/c3660838-1d8f-46b2-b4a4-02d1d506164c)
+
+
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/beb4a630-90c1-4b6c-beb9-067baf489b3c)
+
+
+
+
+### mult2
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/3232cd47-786f-4996-ba56-6a5a17395dbf)
+
+### mult8
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/95e945cc-6a1b-49a1-9167-70bbb200eef4)
+
+
+### sub_module_1
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/e7eab964-7453-4eca-8ed5-92c52502839c)
+
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/4806b788-5462-4447-9efb-85bc80f61f8f)
+
+
+## Usage
+
+1. Navigate to the `verilog_files` directory.
+2. Open the desired module's Verilog file in a text editor or an IDE.
+3. Modify the design or study the code to understand the reset methodology being implemented.
+4. Optionally, navigate to the `tests` directory to find testbenches for these modules.
+5. Run simulations using tools like ModelSim or other preferred simulation environments to observe the behavior of each reset type.
 
