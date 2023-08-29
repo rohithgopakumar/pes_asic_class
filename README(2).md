@@ -272,7 +272,7 @@ To store 64 bits of data from mem to reg, we use 8*8bit stores ie., m[0],m[1]...
 
 </details>
 <details>
-<summary>DAY 1: Introduction to Verilog RTL Design and Synthesis </summary>
+<summary>DAY 3: Introduction to Verilog RTL Design and Synthesis </summary>
 <br>
 
 
@@ -280,7 +280,7 @@ To store 64 bits of data from mem to reg, we use 8*8bit stores ie., m[0],m[1]...
 
 
  
-Welcome to Day 1 of the Verilog RTL Design and Synthesis guide! On this day, we'll cover the basics of Verilog and get you started on your journey in digital design.
+Welcome to the Verilog RTL Design and Synthesis guide! On this day, we'll cover the basics of Verilog and get you started on your journey in digital design.
 
 ## Table of Contents
 
@@ -306,7 +306,7 @@ Verilog is a hardware description language used for designing digital systems at
 <details>
 <summary><strong>part 2: Design Flow and Simulation</strong></summary>
 
-Welcome to Day 2 of the Verilog RTL Design and Synthesis guide! Today, we'll delve into the design flow and simulation processes involved in creating robust digital designs using Verilog.
+Welcome to the Verilog RTL Design and Synthesis guide! Today, we'll delve into the design flow and simulation processes involved in creating robust digital designs using Verilog.
 
 ## Table of Contents
 
