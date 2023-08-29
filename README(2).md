@@ -352,4 +352,70 @@ Here are some resources to further your understanding of Verilog RTL design and 
 </details>
 
 
+</details>
+<details>
+<summary>DAY 4: Timing libs,heirarchical vs flat synthesis and efficient flop coding styles </summary>
+<br>
+
+
+# Hierarchical and Flat Synthesis using Yosys
+
+This repository contains an example project demonstrating the process of hierarchical and flat synthesis using Yosys. The project includes Verilog code files and instructions to perform both hierarchical and flat synthesis on a design.
+
+## Contents
+
+- [Introduction](#introduction)
+- [Project Structure](#project-structure)
+- [Hierarchical Synthesis](#hierarchical-synthesis)
+- [Flat Synthesis](#flat-synthesis)
+- [Usage](#usage)
+- [License](#license)
+
+## Introduction
+
+This project aims to illustrate the concepts of hierarchical and flat synthesis using Yosys, a popular open-source synthesis tool. The Verilog design consists of multiple modules that are synthesized hierarchically and then flattened into a single-level netlist.
+
+## Project Structure
+
+The project is organized as follows:
+
+- `verilog_files/`: Directory containing Verilog design files.
+- `lib/`: Directory containing standard cell library files.
+- `README.md`: This README file.
+
+## Hierarchical Synthesis
+
+1. Navigate to the `verilog_files` directory.
+2. Invoke Yosys using the command `yosys`.
+3. Once inside Yosys, follow the sequence of commands mentioned below:
+
+- read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+- read_verilog multiple_modules.v
+- synth -top multiple_modules
+- abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+- show multiple_modules
+- write_verilog -noattr multiple_modules_hier.v
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/ad8d3d47-9c36-4662-9a45-246dedb9b124)
+
+4. Open the generated `multiple_modules_hier.v` file using a text editor or a tool like `gvim`.
+
+## Flat Synthesis
+
+1. Navigate to the `verilog_files` directory.
+2. Invoke Yosys using the command `yosys`.
+3. Once inside Yosys, follow the sequence of commands mentioned below:
+
+- read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+- read_verilog multiple_modules.v
+- synth -top multiple_modules
+- abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+- flatten
+- show
+- write_verilog -noattr multiple_modules_flat.v
+
+![image](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/4f7d2b65-5e7d-4710-8d41-73c8892aa5f7)
+
+4. Open the generated `multiple_modules_flat.v` file using a text editor or a tool like `gvim`.
+
 
