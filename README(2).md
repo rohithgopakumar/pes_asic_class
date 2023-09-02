@@ -326,8 +326,12 @@ Before you begin, ensure you have the following installed:
 The design consists of the following Verilog files:
 
 - `good_mux_1.v`: The main multiplexer module.
+
 ![good_mux_1_](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/8613bb15-ecda-4797-8576-c89a99a08e82)
 
+
+
+![verilog_files](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/5085e450-aed2-4d78-8ab8-84bcb775fd26)
 
 ## Synthesis
 
@@ -339,6 +343,11 @@ To synthesize the "good_mux_1" design using your preferred synthesis tool, follo
 4. Set the target FPGA device and synthesis constraints.
 5. Launch the synthesis process.
 6. Review the synthesis report for any errors or warnings.
+
+
+![synthesis_illustration](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/1ac59093-7b78-4404-8dcc-0aab7332f7dd)
+
+
 
 ![good_mux_1](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/582639c2-1e35-44e8-aea2-65b68b8b9d3c)
 
