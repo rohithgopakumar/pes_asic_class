@@ -574,6 +574,15 @@ This repository contains Verilog code examples demonstrating both combination an
 
 ![opt_check4_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/848155d4-089d-433b-beb9-5fb09289e9f8)
 
+- `opt_check4.v`: Further combination optimization examples.
+
+
+![opt_check4](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/eec101bb-b070-4e10-844f-78de3cd23c46)
+
+
+
+![opt_check4_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/10ea2258-a578-4b6f-ac43-ea5d71bfb548)
+
 
 
 ### Sequential Optimizations
@@ -584,6 +593,60 @@ This repository contains Verilog code examples demonstrating both combination an
 ![multiple_module_opt2](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/e6c428f6-de75-4a29-a9d1-8794fe80c045)
 
 
+
+
+### Flip-Flop Constant Optimization Examples
+
+- `dff_const1.v`: Verilog code demonstrating flip-flop constant optimization (1-bit constant).
+
+
+![dff_const1_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/2267b5e4-efaf-4d0d-8c87-4ea80848abdd)
+
+
+
+![dff_const1_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/28630626-3e66-4de8-aae0-35b47492f564)
+
+
+
+- `dff_const2.v`: Verilog code demonstrating flip-flop constant optimization (2-bit constant).
+
+![dff_const2_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/7ca7e1ac-de4c-4f1f-8c07-cb9358db2444)
+
+
+![dff_const2_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/eb0e3164-c3ad-4ed4-bc5a-abbcd91af6fd)
+
+
+- `dff_const3.v`: Verilog code demonstrating flip-flop constant optimization (3-bit constant).
+
+
+![dff_const3_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/d4440bea-b69d-47cc-8b3c-8821c59bc326)
+
+
+
+![dff_const3_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/3dd17a9b-0d69-4949-8b7e-36a2f5afaec5)
+
+- `dff_const4.v`: Verilog code demonstrating flip-flop constant optimization (4-bit constant).
+
+
+
+![dff_const4_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/f08a0505-61e8-43d4-91dd-575ee80b1dfd)
+
+
+
+
+![dff_const4_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/90a12b0a-42bd-4b6f-818b-67e0e4d83680)
+
+
+- `dff_const5.v`: Verilog code demonstrating flip-flop constant optimization (5-bit constant).
+
+
+
+![dff_const5_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/ea1758b1-df0f-4ffb-8b3d-557f9b288c74)
+
+
+
+
+![dff_const5_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/29fea88f-a420-4542-b854-46a2809c4d53)
 
 
 
