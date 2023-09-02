@@ -276,9 +276,6 @@ To store 64 bits of data from mem to reg, we use 8*8bit stores ie., m[0],m[1]...
 <br>
 
 
-
-
-
  
 Welcome to the Verilog RTL Design and Synthesis guide! On this day, we'll cover the basics of Verilog and get you started on your journey in digital design.
 
@@ -300,6 +297,60 @@ Verilog is a hardware description language used for designing digital systems at
 - **Registers:** Verilog designs often involve flip-flops and registers, which store and manipulate data.
 
 - **Combination and Sequential Logic:** Verilog supports both combinational logic (where outputs depend only on current inputs) and sequential logic (where outputs depend on current inputs and previous state).
+
+
+
+## Overview
+
+This repository contains the Verilog design files for a multiplexer called "good_mux_1". It also includes instructions for synthesis and simulation using GTKWave.
+
+## Table of Contents
+
+1. [Prerequisites](#prerequisites)
+2. [Design Files](#design-files)
+3. [Synthesis](#synthesis)
+4. [Simulation](#simulation)
+5. [License](#license)
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- A Verilog synthesis tool (e.g., Xilinx Vivado, Synopsys Design Compiler).
+- A Verilog simulation tool (e.g., ModelSim).
+- GTKWave for waveform viewing.
+- (Add any other prerequisites specific to your project)
+
+## Design Files
+
+The design consists of the following Verilog files:
+
+- `good_mux_1.v`: The main multiplexer module.
+![good_mux_1_](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/8613bb15-ecda-4797-8576-c89a99a08e82)
+
+
+## Synthesis
+
+To synthesize the "good_mux_1" design using your preferred synthesis tool, follow these general steps:
+
+1. Open your synthesis tool.
+2. Create a new project or workspace.
+3. Add the Verilog files from this repository to your project.
+4. Set the target FPGA device and synthesis constraints.
+5. Launch the synthesis process.
+6. Review the synthesis report for any errors or warnings.
+
+![good_mux_1](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/582639c2-1e35-44e8-aea2-65b68b8b9d3c)
+
+
+## Simulation
+
+To simulate the "good_mux_1" design using ModelSim and view the waveforms in GTKWave, follow these steps:
+
+
+
+![gtkwave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/01854222-1d91-4bd8-b96f-89c9f25dba79)
+
 
 
 
