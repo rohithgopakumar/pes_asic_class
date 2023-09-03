@@ -720,3 +720,16 @@ This repository contains Verilog code examples demonstrating both combination an
 
 
 ![counter2_opt_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/a9399c53-73bf-4d9b-8e4a-35687a4710fd)
+
+
+
+
+
+</details>
+<details>
+<summary>DAY 6: GLS,blocking vs non-blocking and Synthesis-Simulation mismatch </summary>
+<br>
+
+
+
+
