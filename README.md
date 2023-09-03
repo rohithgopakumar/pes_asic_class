@@ -741,6 +741,11 @@ This repository contains Verilog code examples demonstrating both combination an
 5. Ternary Operator Schematic (MUX)
 6. GLS Synthesis Diagram
 7. Dealing with the "bad_mux_wave" Issue
+8. Understanding Synthesis-Simulation Mismatch
+9. Common Causes of Synthesis-Simulation Mismatches
+10. Identifying the "blocking_caveat_wave_GLS" Issue
+11. Resolving the "blocking_caveat_wave_GLS" Issue
+12. Conclusion
 
 ---
 
