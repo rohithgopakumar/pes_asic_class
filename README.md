@@ -802,7 +802,7 @@ The ternary operator (conditional operator) in hardware design acts like a multi
 
 ---
 
-## 8. GLS Synthesis Diagram
+## 6. GLS Synthesis Diagram
 
 The GLS synthesis diagram is a visual representation of how your RTL design maps to the gate-level implementation. It helps you understand how different modules, logic gates, and signals are interconnected in your design. Refer to the synthesis diagram during the GLS process to ensure that the gate-level simulation accurately reflects your intended hardware behavior.
 
@@ -812,7 +812,7 @@ The GLS synthesis diagram is a visual representation of how your RTL design maps
 
 ---
 
-## 9. Dealing with the "bad_mux_wave" Issue
+## 7. Dealing with the "bad_mux_wave" Issue
 
 The "bad_mux_wave" issue is a common error encountered during GLS, often associated with conditional statements and multiplexers. To address this issue:
 
@@ -837,4 +837,72 @@ Remember that debugging such issues may require a systematic approach, including
 
 
 ---
+
+
+---
+
+## 8. Understanding Synthesis-Simulation Mismatch
+
+Synthesis-simulation mismatches occur when there are discrepancies between the behavior of a digital design in simulation (often at the register-transfer level, RTL) and the actual behavior in hardware after synthesis. Detecting and resolving these mismatches is critical for producing reliable and functional hardware.
+
+---
+
+## 9. Common Causes of Synthesis-Simulation Mismatches
+
+Synthesis-simulation mismatches can result from various factors, including:
+
+- **Incorrect Constraints:** Timing, area, and other constraints that are not accurately specified can lead to mismatches.
+
+- **Improper Clock Domain Crossing Handling:** Inconsistent handling of clock domains can cause issues.
+
+- **Missing or Inaccurate Simulation Models:** Simulation tools may not accurately represent the behavior of specific hardware elements.
+
+- **Incorrect Clock and Reset Synchronization:** Asynchronous signals and clock domain crossings require careful handling.
+
+- **Sequential vs. Combinatorial Logic:** Differences in how sequential and combinatorial logic is handled can lead to mismatches.
+
+---
+
+## 10. Identifying the "blocking_caveat_wave_GLS" Issue
+
+The "blocking_caveat_wave_GLS" issue is a specific simulation error that can occur during gate-level simulation (GLS) when you have a combination of blocking assignments in your Verilog code. It often manifests as a wave signal that doesn't change when expected, leading to unexpected simulation behavior.
+
+
+![blocking_caveat_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/0a271c97-32a4-41e6-bd4e-5f837f2f8b76)
+
+
+
+
+![blocking_caveat_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/1d67f147-5c16-4394-8f9f-473ecc0fd594)
+
+---
+
+## 11. Resolving the "blocking_caveat_wave_GLS" Issue
+
+To resolve the "blocking_caveat_wave_GLS" issue and prevent synthesis-simulation mismatches, follow these steps:
+
+1. **Review Your Verilog Code:** Carefully inspect your Verilog code for any blocking assignments that might be causing the issue.
+
+2. **Identify the Culprit:** Isolate the specific part of your code where the issue occurs. Look for scenarios where multiple blocking assignments are used together.
+
+3. **Analyze Signal Dependencies:** Check if there are dependencies between signals that could cause contention due to the use of blocking assignments.
+
+4. **Use Non-blocking Assignments:** In many cases, replacing some of the blocking assignments with non-blocking assignments can resolve the issue. Non-blocking assignments (`<=`) are often a better choice for sequential logic and can help avoid contention.
+
+5. **Use Appropriate Blocking Assignments:** If you need to use blocking assignments, ensure they are used correctly and do not create contention between signals.
+
+6. **Simulate with Care:** After making code changes, re-run your simulations and verify that the "blocking_caveat_wave_GLS" issue is resolved. Pay close attention to waveform changes and timing.
+
+7. **Consult Tool Documentation:** If the issue persists, refer to the documentation of your simulation tool for specific guidance on handling the "blocking_caveat_wave_GLS" issue. Some tools may have unique requirements or workarounds.
+
+
+
+![blocking_caveat_wave_GLS](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/1dd93c0e-d689-4f36-929a-4c9108ae2f57)
+
+---
+
+## 12. Conclusion
+
+Synthesis-simulation mismatches can be challenging to diagnose and fix, but understanding the specific issue, such as the "blocking_caveat_wave_GLS" problem, is the first step toward resolution. By carefully reviewing your Verilog code, identifying the issue, and using the appropriate assignments, you can ensure that your gate-level simulations accurately represent the behavior of your hardware design. Debugging and resolving mismatches early in the design process will lead to more reliable and predictable hardware outcomes.
+
 
