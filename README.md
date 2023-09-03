@@ -731,5 +731,110 @@ This repository contains Verilog code examples demonstrating both combination an
 <br>
 
 
+# GLS (Gate-Level Simulation) Read Me
 
+## Table of Contents
+1. Introduction
+2. GLS Overview
+3. Blocking vs. Non-blocking Assignments
+4. Synthesis-Simulation Mismatch
+5. Ternary Operator Schematic (MUX)
+6. GLS Synthesis Diagram
+7. Dealing with the "bad_mux_wave" Issue
+
+---
+
+## 1. Introduction
+
+Welcome to the GLS (Gate-Level Simulation) Read Me file. This document aims to provide you with essential information about GLS, blocking vs. non-blocking assignments, and the challenges related to synthesis-simulation mismatches. Additionally, it covers specific topics such as the ternary operator schematic MUX, GLS synthesis diagrams, and how to handle the "bad_mux_wave" issue. Whether you are a beginner or an experienced engineer, this guide should help you navigate these complex topics effectively.
+
+---
+
+## 2. GLS Overview
+
+GLS, or Gate-Level Simulation, is a crucial step in the digital design process. It involves simulating the design using gate-level representations, which accurately reflect how the digital logic will behave in hardware. The primary goals of GLS are to ensure that the RTL (Register-Transfer Level) design correctly maps to the gate-level implementation and to identify any potential issues before moving to the physical synthesis and manufacturing stages.
+
+---
+
+## 3. Blocking vs. Non-blocking Assignments
+
+In Verilog and other hardware description languages, there are two types of assignments: blocking and non-blocking. Understanding the difference between these assignment types is essential for accurate simulation and proper design implementation.
+
+- **Blocking Assignments:** These assignments are executed sequentially in the order they appear in the code. The value assigned to a signal is immediately updated, and any subsequent assignments depend on the updated value. Blocking assignments are denoted by the '=' operator.
+
+- **Non-blocking Assignments:** These assignments are executed concurrently, meaning that all assignments are scheduled simultaneously and then executed together in a non-blocking manner. Non-blocking assignments are denoted by the '<=' operator.
+
+It's crucial to use the correct assignment type in your code to avoid unexpected simulation results and synthesis-simulation mismatches.
+
+---
+
+## 4. Synthesis-Simulation Mismatch
+
+Synthesis-simulation mismatches occur when there are differences between the behavior of a design in simulation (RTL or gate-level) and its actual behavior in hardware. These mismatches can lead to functional errors, timing violations, or even design failures. Common causes of mismatches include incorrect constraints, improper use of blocking/non-blocking assignments, and missing simulation models for specific hardware elements.
+
+To avoid synthesis-simulation mismatches, it's essential to:
+
+- Use appropriate simulation models and libraries for your target technology.
+- Ensure accurate constraints and timing information.
+- Use the correct assignment types (blocking/non-blocking).
+- Verify that the synthesized netlist matches the RTL design in terms of functionality.
+
+---
+
+## 5. Ternary Operator Schematic (MUX)
+
+The ternary operator (conditional operator) in hardware design acts like a multiplexer (MUX) and is commonly used to select between two values based on a condition. Its schematic representation resembles a 2-to-1 MUX, where one input is selected based on the condition signal.
+
+
+
+![ternary_operator_mux](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/16123323-5d12-4fdd-ab6e-a458cf420ced)
+
+
+
+
+![ternary_operator_mux_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/e64a601a-5d7a-43bf-9e90-c301e3635332)
+
+
+
+
+![ternary_operator_mux_wave_GLS](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/8628319d-2fba-425b-b8af-e5cf401f01e0)
+
+
+---
+
+## 8. GLS Synthesis Diagram
+
+The GLS synthesis diagram is a visual representation of how your RTL design maps to the gate-level implementation. It helps you understand how different modules, logic gates, and signals are interconnected in your design. Refer to the synthesis diagram during the GLS process to ensure that the gate-level simulation accurately reflects your intended hardware behavior.
+
+
+
+![GLS_synthesis_diagram](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/8a5de2b5-2fa4-445c-ab8d-4d3236bd339c)
+
+---
+
+## 9. Dealing with the "bad_mux_wave" Issue
+
+The "bad_mux_wave" issue is a common error encountered during GLS, often associated with conditional statements and multiplexers. To address this issue:
+
+1. **Review Your Conditional Logic:** Check your Verilog code for conditional statements, especially those involving MUX-like operations. Verify that the conditions and assignments are correctly implemented.
+
+2. **Use Blocking or Non-blocking Assignments Appropriately:** Ensure that you use the appropriate assignment type (blocking or non-blocking) for MUX outputs based on your design requirements.
+
+3. **Verify Signal Dependencies:** Check the dependencies of signals involved in conditional logic. Ensure that the sequencing of assignments matches your design intent.
+
+4. **Check for Missing Signals or Modules:** Sometimes, the "bad_mux_wave" issue can be a result of missing signals or modules in your design. Review your RTL and verify that all necessary components are included.
+
+5. **Consult Simulation and Synthesis Tools Documentation:** Consult the documentation of your simulation and synthesis tools for specific guidance on resolving the "bad_mux_wave" issue. Tool-specific solutions may be available.
+
+Remember that debugging such issues may require a systematic approach, including reviewing code, checking signals, and referring to simulation and synthesis logs for additional information.
+
+
+
+![bad_mux_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/4a81b129-4b9e-4340-95a4-b33e06808f0c)
+
+
+![bad_mux_GLS_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/bb864b4f-85a0-4fe1-80dc-f8d2a82f9001)
+
+
+---
 
