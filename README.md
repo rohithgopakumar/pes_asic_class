@@ -709,5 +709,14 @@ This repository contains Verilog code examples demonstrating both combination an
 ![dff_const5_wave](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/29fea88f-a420-4542-b854-46a2809c4d53)
 
 
+- `counter_opt.v`: Verilog code demonstrating counter optimization.
 
 
+![counter_opt_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/fc14b16f-3cca-4f08-9071-10d5c67e5662)
+
+
+- `counter2_opt.v`: Verilog code demonstrating counter optimization.
+
+
+
+![counter2_opt_schematic](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/a9399c53-73bf-4d9b-8e4a-35687a4710fd)
