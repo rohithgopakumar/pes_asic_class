@@ -919,3 +919,58 @@ Synthesis-simulation mismatches can be challenging to diagnose and fix, but unde
 <details>
 <summary>DAY 7:  Inception of open-source EDA,Openlane and sky130 PDK </summary>
 <br>
+
+
+
+
+
+
+# Inception of Open-Source EDA: OpenLane and Sky130 PDK
+
+## Introduction
+
+Welcome to the Inception of Open-Source EDA project, where we explore the integration of OpenLane with the Skywater 130nm Process Design Kit (PDK). This open-source initiative aims to facilitate digital chip design and manufacturing, making EDA tools more accessible and collaborative.
+
+## Table of Contents
+1. [Prerequisites](#1-prerequisites)
+2. [Installation](#2-installation)
+3. [Getting Started](#3-getting-started)
+4. [Project Structure](#4-project-structure)
+5. [Contributing](#5-contributing)
+6. [License](#6-license)
+
+## 1. Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- **Linux Environment**: OpenLane and Skywater PDK are primarily designed for Linux. We recommend using Ubuntu 18.04 LTS or later.
+
+- **Git**: You'll need Git for version control and project setup.
+
+- **Python**: Ensure you have Python 3.6 or higher installed on your system.
+
+- **Docker**: Docker is used for containerization, simplifying the installation of various tools.
+
+- **Synopsys Tools (Optional)**: Some stages of the flow may require specific EDA tools, such as Design Compiler. Note that these tools might require licenses.
+
+## 2. Installation
+
+Follow these steps to set up the project:
+
+1. Clone the OpenLane repository:
+
+   ```shell
+   git clone https://github.com/The-OpenROAD-Project/OpenLane.git
+
+
+## 3. Getting Started
+
+Now that you have everything set up, you can start using OpenLane and exploring the Sky130 PDK:
+
+### Run OpenLane
+
+To run OpenLane, enter the OpenLane container:
+
+```shell
+make mount
+
