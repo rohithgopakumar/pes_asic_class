@@ -935,9 +935,10 @@ Welcome to the Inception of Open-Source EDA project, where we explore the integr
 1. [Prerequisites](#1-prerequisites)
 2. [Installation](#2-installation)
 3. [Getting Started](#3-getting-started)
-4. [Project Structure](#4-project-structure)
-5. [Contributing](#5-contributing)
+4. [ Additional Resources](#4- Additional Resources)
+5. [Troubleshooting](#5-Troubleshooting)
 6. [License](#6-license)
+7. [ Flop Ratio](#7- Flop Ratio)
 
 ## 1. Prerequisites
 
@@ -973,4 +974,58 @@ To run OpenLane, enter the OpenLane container:
 
 ```shell
 make mount
+```
 
+
+![openlane_open_check](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/6928cc6f-4190-4a54-a369-796ed5fe84e6)
+
+
+
+![openlane_open1](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/11765d62-c629-4354-82a5-63c43d449b4c)
+
+
+
+![openlane_prep](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/19fab514-98f6-4243-b354-aff0e0894391)
+
+
+
+## 4. Additional Resources
+
+- **OpenLane Documentation**: Explore the comprehensive [OpenLane documentation](https://github.com/The-OpenROAD-Project/OpenLane) to learn more about the tool's capabilities and usage.
+
+- **Skywater 130nm PDK Documentation**: Refer to the official [Skywater PDK documentation](https://github.com/google/skywater-pdk) for detailed information on the PDK components, usage, and design rules.
+
+- **Community and Support**: Join the OpenLane and Sky130 PDK communities on platforms like GitHub and Reddit to ask questions, share experiences, and collaborate with others in the field of digital chip design.
+
+## 5. Troubleshooting
+
+If you encounter issues during the installation or usage of OpenLane or the Sky130 PDK, please refer to the troubleshooting section in the respective documentation. You can also seek assistance from the community through forums and discussion groups.
+.
+
+## 6. License
+
+This project is distributed under the MIT License. For more details, please refer to the [LICENSE](LICENSE.md) file.
+
+
+Thank you for joining us on this journey to make chip design more accessible and collaborative. We look forward to seeing the amazing designs you create using OpenLane and the Sky130 PDK!
+
+
+## 7. Flop Ratio
+
+The flop ratio is an important consideration in chip design, representing the balance between flip-flops (FFs) and logic elements. Achieving the right flop ratio is crucial for optimizing power consumption, performance, and area utilization in your designs.
+
+When working on your chip design projects using OpenLane and the Sky130 PDK, keep the following tips in mind:
+
+- **Ratio Guidelines**: Consult industry-standard guidelines or design specifications for the optimal flop ratio for your specific application.
+
+- **OpenLane Tools**: OpenLane provides tools and options for analyzing and optimizing your flop ratio during the design process. Refer to the OpenLane documentation for details on how to use these features effectively.
+
+- **Performance vs. Power**: Adjusting the flop ratio can impact both the performance and power consumption of your chip. Be mindful of your project's requirements and goals when making these adjustments.
+
+- **Simulation**: Before finalizing your design, perform simulations to evaluate the impact of the flop ratio on functionality and timing. OpenLane offers simulation capabilities to assist in this process.
+
+Balancing the flop ratio is a critical aspect of chip design, and OpenLane offers the flexibility and tools necessary to fine-tune this ratio to meet your project's objectives.
+
+
+
+![flop_ratio](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/99475158-736a-423b-9666-b7609779129b)
