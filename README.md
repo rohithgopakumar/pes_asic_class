@@ -911,3 +911,11 @@ To resolve the "blocking_caveat_wave_GLS" issue and prevent synthesis-simulation
 Synthesis-simulation mismatches can be challenging to diagnose and fix, but understanding the specific issue, such as the "blocking_caveat_wave_GLS" problem, is the first step toward resolution. By carefully reviewing your Verilog code, identifying the issue, and using the appropriate assignments, you can ensure that your gate-level simulations accurately represent the behavior of your hardware design. Debugging and resolving mismatches early in the design process will lead to more reliable and predictable hardware outcomes.
 
 
+
+
+
+
+</details>
+<details>
+<summary>DAY 7:  Inception of open-source EDA,Openlane and sky130 PDK </summary>
+<br>
