@@ -1029,3 +1029,30 @@ Balancing the flop ratio is a critical aspect of chip design, and OpenLane offer
 
 
 ![flop_ratio](https://github.com/rohithgopakumar/pes_asic_class/assets/131611312/99475158-736a-423b-9666-b7609779129b)
+
+
+
+
+
+
+
+
+</details>
+<details>
+<summary>DAY 8 : Good floorplan vs bad floorplan and introduction to librabry cells </summary>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
